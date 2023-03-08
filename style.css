@@ -9,22 +9,22 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #eee;
   color: #333;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .planner {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 80%;
+  width: 90%;
 }
 
 .day {
     margin: 10px;
     border: 1px solid red;
-    width: 100%;
 }
 
 header{
@@ -36,10 +36,6 @@ header{
     padding: 10px;
     border: 1px solid blue;
     position: relative;
-}
-
-.item.school {
-  background-color: #ffcccb;
 }
 
 .description {
@@ -69,11 +65,38 @@ input:checked + label + p{
 input:not(:checked) + label + p{
   position: absolute;
   background-color: #eee;
-  padding: 15px;
+  margin:0 5px;
+  padding: 10px;
   border: 1px red solid;
   color: black;
   z-index: 1;
-  width: 300px;
   top: 40px;
   left: -1px;
+}
+
+footer {
+  align-self: center;
+  margin: 10px;
+}
+
+
+
+.label {
+  font-size: 1.5rem;
+  display: inline;
+  padding: 5px;
+  border: 2px black solid;
+  border-radius: 5px;;
+}
+
+.school {
+  background-color: #ffcccb;
+}
+
+.work {
+  background-color: #99ff99;
+}
+
+@media screen and (max-width: 800px){
+
 }
