@@ -4,23 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weekly Planner</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<header>
+    <h1>My Planner</h1>
+</header>
+<div class="planner">
     <div class="day">
         <header>Monday</header>
         <div draggable="true" class="item">
             <span>Do Dishes</span>
+            <input id="s1" type="checkbox" name="t2" checked />
+            <label for="s1"></label>
+            <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ipsam totam accusamus provident, dignissimos eos a dolore itaque rerum tempora cumque aliquid exercitationem, quasi consequatur temporibus atque debitis eligendi perspiciatis?
+            </p>
         </div>
-        <div draggable="true" class="item">
+        <div draggable="true" class="item school">
             <span>Take Out Trash</span>
+            <input id="s2" type="checkbox" name="t2" checked />
+            <label for="s2"></label>
+            <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ipsam totam accusamus provident, dignissimos eos a dolore itaque rerum tempora cumque aliquid exercitationem, quasi consequatur temporibus atque debitis eligendi perspiciatis?
+            </p>
         </div>
     </div>
     <div class="day">
         <header>Tuesday</header>
     </div>
+    <div class="day">
+        <header>Wednesday</header>
+    </div>
+    <div class="day">
+        <header>Thursday</header>
+    </div>
+    <div class="day">
+        <header>Friday</header>
+    </div>
+</div>
 
+<footer>
+    Key:
+</footer>
     <script src="index.js"></script>
 </body>
 </html>
