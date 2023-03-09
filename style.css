@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #eee;
   color: #333;
   display: flex;
@@ -42,27 +40,23 @@ header{
   color: gray;
 }
 
-input {
+.dropdown {
   display: none;
 }
 
-label{
-  
-}
-
-input:not(:checked) + label::before{
+.dropdown:not(:checked) + label::before{
   content: "\25bc";
 }
 
-input:checked + label::after{
+.dropdown:checked + label::after{
   content:"\25c0";
 }
 
-input:checked + label + p{
+.dropdown:checked + label + p{
   display: none;
 }
 
-input:not(:checked) + label + p{
+.dropdown:not(:checked) + label + p{
   position: absolute;
   background-color: #eee;
   margin:0 5px;

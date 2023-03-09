@@ -12,11 +12,11 @@
     <h1>My Planner</h1>
 </header>
 <div class="planner">
-    <div class="day">
+    <div class="day" id="Monday">
         <header>Monday</header>
         <div draggable="true" class="item work">
             <span>Do Dishes</span>
-            <input id="s1" type="checkbox" name="t2" checked />
+            <input id="s1" type="checkbox" name="t2" class="dropdown" checked />
             <label for="s1"></label>
             <p class="description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ipsam totam accusamus provident, dignissimos eos a dolore itaque rerum tempora cumque aliquid exercitationem, quasi consequatur temporibus atque debitis eligendi perspiciatis?
@@ -24,26 +24,44 @@
         </div>
         <div draggable="true" class="item school">
             <span>Take Out Trash</span>
-            <input id="s2" type="checkbox" name="t2" checked />
+            <input id="s2" type="checkbox" name="t2" class="dropdown" checked />
             <label for="s2"></label>
             <p class="description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ipsam totam accusamus provident, dignissimos eos a dolore itaque rerum tempora cumque aliquid exercitationem, quasi consequatur temporibus atque debitis eligendi perspiciatis?
             </p>
         </div>
     </div>
-    <div class="day">
+    <div class="day" id="Tuesday">
         <header>Tuesday</header>
     </div>
-    <div class="day">
+    <div class="day" id="Wednesday">
         <header>Wednesday</header>
     </div>
-    <div class="day">
+    <div class="day" id="Thursday">
         <header>Thursday</header>
     </div>
-    <div class="day">
+    <div class="day" id="Friday">
         <header>Friday</header>
     </div>
 </div>
+<form id="todo-form">
+    <label for="todo-name">Name:</label>
+    <input name="todo-name" type="text" id="todo-name" required>
+
+    <label for="form-day">Day:</label>
+    <select name="form-day" id="todo-day">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+    </select>
+
+    <label for="todo-description">Description(Optional):</label>
+    <input name="todo-description" type="text" id="todo-description">
+
+    <button type="submit">Add Item</button>
+</form>
 
 <footer>
     <div class="label school">School</div>
@@ -52,5 +70,6 @@
 </footer>
     <script src="index.js"></script>
     <script src="style.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>
